@@ -10,7 +10,13 @@
 </head>
 <body>
   <div id="app">
-    Scott says "{{ isTrue ? hello : 'No' }}"
+    <div v-if="isTrue">
+        {{ hello }}
+    </div>
+    <button v-bind:disabled="isTrue" v-on:click="">
+      Press Me
+    </button>
+    Scott says
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.min.js"></script>
   <script  src="js/index.js"></script>

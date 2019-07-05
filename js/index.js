@@ -1,7 +1,7 @@
 const app = new Vue({
   el: '#app',
   data: {
-    isTrue: false,
+    isTrue: true,
     hello: 'Hello World'
   }
 });
