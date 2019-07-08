@@ -11,11 +11,14 @@
 <body>
   <div id="app">
     <div v-if="isTrue">
-        {{ hello }}
+        {{ hello }} {{ methodname() }}
     </div>
-    <button v-bind:disabled="isTrue" v-on:click="">
+    <button v-on:click="toggleIsTrue">
       Press Me
     </button>
+    <!-- <button v-on:click="isTrue = !isTrue">
+      Press Me
+    </button> -->
     Scott says
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.min.js"></script>
